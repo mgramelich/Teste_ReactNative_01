@@ -1,20 +1,25 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
+import { GlobalStyle } from './AppStyle';
+
+import Home from './screens/Home';
+import { Menu } from './components/Menu/Menu';
+import BotoesOnOff from './components/BotoesOnOff/BotoesOnOff';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <SafeAreaView style={[GlobalStyle.container]}>
       <StatusBar style="auto" />
-    </View>
+      <View>
+        <BotoesOnOff />
+      </View>
+
+      <View>
+        <Home />
+        <Menu />
+      </View>
+
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
