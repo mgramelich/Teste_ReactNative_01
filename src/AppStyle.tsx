@@ -2,10 +2,15 @@ import { StyleSheet } from "react-native";
 
 export const GlobalStyle = StyleSheet.create({
   container: {
-    flex: 1,
+    display: 'flex',
+    height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'pink',
+    backgroundColor: '#EEEDDD',
+  },
+
+  bgBranco: {
+    backgroundColor: '#fff',
   },
 
   bgAmarelo: {
@@ -15,6 +20,11 @@ export const GlobalStyle = StyleSheet.create({
     fontSize: 20,
     color: '#000000',
     borderRadius: 25,
+  },
+
+  centroHorizontal: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   textoBranco: {
@@ -40,6 +50,13 @@ export const GlobalStyle = StyleSheet.create({
 
   padding10: {
     padding: 10
-  }
+  },
 
+  marginBottom30: {
+    marginBottom: 30
+  },
+
+  negrito: {
+    fontWeight: 'bold',
+  }
 });

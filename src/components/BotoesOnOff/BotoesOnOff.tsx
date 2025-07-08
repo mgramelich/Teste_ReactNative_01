@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { GlobalStyle } from '../../AppStyle';
+import { GlobalStyle } from '@/AppStyle';
 import { BotoesOnOffStyle } from './BotoesOnOffStyle';
 import { Pressable, TouchableOpacity, Image, View, Text } from 'react-native';
-import switchON from '../../assets/pictures/switchON.png';
-import switchOFF from '../../assets/pictures/switchOFF.png';
+import switchON from '@/assets/pictures/switchON.png';
+import switchOFF from '@/assets/pictures/switchOFF.png';
 
 export default function Home() {
   const [isActive, setActive] = useState(false);
@@ -14,7 +14,8 @@ export default function Home() {
 
   return (
     <View style={[GlobalStyle.rounded, isActive ? GlobalStyle.containerON : GlobalStyle.containerOFF]}>
-      <Text style={[GlobalStyle.textoPreto, GlobalStyle.padding10]}>BtnsComponent</Text>
+
+      <Text style={[GlobalStyle.bgBranco, GlobalStyle.textoPreto, GlobalStyle.padding10]}>BtnsComponent</Text>
 
       <View style={BotoesOnOffStyle.btnsContainer}>
         <Pressable onPress={handleChangeTheme}>

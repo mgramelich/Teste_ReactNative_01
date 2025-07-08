@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { GlobalStyle } from '../../AppStyle';
+import { GlobalStyle } from '@/AppStyle';
 import { MenuStyle } from './MenuStyles';
 
 export function Menu() {
