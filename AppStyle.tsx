@@ -38,4 +38,8 @@ export const GlobalStyle = StyleSheet.create({
     marginBottom: 30,
   },
 
+  padding10: {
+    padding: 10
+  }
+
 });

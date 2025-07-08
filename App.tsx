@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { View, SafeAreaView } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import { GlobalStyle } from './AppStyle';
 
 import Home from './screens/Home';
@@ -11,14 +11,9 @@ export default function App() {
   return (
     <SafeAreaView style={[GlobalStyle.container]}>
       <StatusBar style="auto" />
-      <View>
-        <BotoesOnOff />
-      </View>
-
-      <View>
-        <Home />
-        <Menu />
-      </View>
+      <BotoesOnOff />
+      <Home />
+      <Menu />
 
     </SafeAreaView>
   );
